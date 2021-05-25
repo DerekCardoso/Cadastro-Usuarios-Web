@@ -1,10 +1,10 @@
 # Cadastro-Usuarios-Web💻
 
 o Desafio proposto foi, criar um Cadastro de usuário Web
-onde o usuário cadastra 
+onde o usuário cadastra <br />
 
-Dados do cadastro:
-   ○ nome
+Dados do cadastro:<br />
+  ○ nome
   ○ email
   ○ endereço do usuário
     ■ País
