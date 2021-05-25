@@ -4,7 +4,7 @@ o Desafio proposto foi, criar um Cadastro de usuário Web
 onde o usuário cadastra 
 
 Dados do cadastro:
-  ○ nome
+   ○ nome
   ○ email
   ○ endereço do usuário
     ■ País
