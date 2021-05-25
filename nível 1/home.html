@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuário WEB</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            
+        <div class="buttons">
+            <h1 id="logado"></h1>
+            <button id="btn-login" onclick="EditarRegistro()"data-bs-toggle="modal" data-bs-target="#editModal">Editar Perfil</button>
+        
+            <button id="btn-login" onclick="sair()">Logout</button>
+        </div>
+    </header>
+
+    <!--Modal-->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="editModalLabel">Editar Perfil</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Nome</label>
+                        <input id="txtNome" type="text" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Sobrenome</label>
+                        <input id="txtSobrenome"type="text" class="form-control" placeholder="Digite seu sobrenome...">
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="">E-mail</label>
+                          <input id="txtEmail"type="email" class="form-control" placeholder="Digite seu Email">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">CPF</label>
+                          <input id="txtCpf"type="text" class="form-control" placeholder="Digite seu CPF">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">PIS</label>
+                          <input id="txtPis" type="text" class="form-control" placeholder="Digite seu Pis">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">CEP</label>
+                          <input id="txtCep"type="text" class="form-control" placeholder="Digite seu CEP">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">Rua</label>
+                          <input id="txtRua" type="text" class="form-control" placeholder="Digite sua Rua">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">Número</label>
+                          <input id="txtNum"type="text" class="form-control" placeholder="Digite seu Número">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">Complemento</label>
+                          <input id="txtComp" type="text" class="form-control" placeholder="Digite o complemento">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">Bairro</label>
+                          <input id="txtBairro"type="text" class="form-control" placeholder="Digite seu Bairro">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">Estado</label>
+                          <input id="txtEst" type="text" class="form-control" placeholder="Digite seu Estado">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for=""> Nova Senha</label>
+                          <input id="txtSenha"type="password" class="form-control" placeholder="Digite sua senha">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">Confirmar Nova senha</label>
+                          <input id="txtsenha" type="password" class="form-control" placeholder="Confirme sua Senha">
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="modal-footer"><button id="btnSalvar" type="button" class="btn btn-danger" onclick="remover()">Remover Usuário</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button id="btnSalvar" type="button" class="btn btn-primary" onclick="EditaRegistro()">Alterar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

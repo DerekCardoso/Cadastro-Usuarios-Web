@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="css/cadastro.css">
+    <!--Importando Script Jquery-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://kit.fontawesome.com/0bccaac46f.js" crossorigin="anonymous" defer></script>
+
+</head>
+<body>
+    <div id="main-container">
+        <a href="index.html"><i class="fas fa-chevron-left" id="back"></a></i>
+        <h1>Cadastre-se para acessar o sistema</h1>
+        <form id="registerform">
+            <div class="half-box spacing">
+                <label for="name" id="labelnome">Nome</label>
+                <input type="text" name="name" id="username" placeholder="Digite o seu Nome" data-required data-only-letters>
+            </div>
+            <div class="half-box">
+                <label for="lastname" id="labelsobrenome">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite o seu Sobrenome"> 
+            </div>
+
+            <div class="full-box spacing">
+                <label for="email" id="labelemail">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu E-mail" data-email-validate>
+            </div>
+
+            <div class="half-box spacing">
+                <label for="cpf" id="labelcpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite a seu CPF" data-min-length="11" data-max-length="11" data-required>
+            </div>
+            <div class="half-box spacing">
+                <label for="pis" id="labelpis">PIS</label>
+                <input type="text" name="pis" id="pis" placeholder="PIS" data-min-length="11" data-max-length="11">
+            </div>
+
+            <!--Campos de endereço-->
+            <div class="half-box spacing"> 
+                <label for="cep" id="labelcep">CEP</label>
+                    <input id="cep" type="text" placeholder="xxxxxxxx" data-min-length="8" data-max-length="8" data-required/>
+                </div>
+                <div class="half-box">
+                <label for="logradouro" id="labelrua">Rua</label>
+                    <input id="logradouro" type="text" required/>
+                </div>
+                <div class="half-box spacing">
+                    <label for="numero" id="labelnumero">Número</label>
+                    <input id="numero" type="text" />
+                </div>
+                <div class="half-box">
+                <label for="complemento" id="labelcomplemento">Complemento</label>
+                    <input id="complemento" type="text"/>
+                </div>
+                <div class="half-box spacing">
+                    <label for="bairro" id="labelbairro">Bairro</label>
+                    <input id="bairro" type="text" required/>
+                </div> 
+                <div class="half-box" id="estado">  
+                <label for="uf" id="labelestado">Estado</label>
+                        <select id="uf">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                     
+        </div>
+
+        <!--Dados Pessoais-->
+      
+
+        <div class="half-box spacing">
+            <label for="password" id="labelpassword">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite a sua senha" data-required data-password-validate>
+        </div>
+        <div class="half-box spacing">
+            <label for="passconfirmation" id="labelpassconfirmation">Confirmar senha</label>
+            <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua Senha" data-equal="password" data-required>
+        </div>
+        <div class="full-box">
+            <button type="submit" id="btn-submit" onclick="cadastraUsuario()">Cadastrar</button>
+        </div>
+        </form>
+    </div>
+
+    <!--Dica do que o usuário errou-->
+    <p class="error-validation template"></p>
+
+    <script src="js/lugares.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
