@@ -7,13 +7,13 @@ Dados do cadastro:<br />
   ○ Nome <br />
   ○ Email <br />
   ○ Endereço do usuário <br />
-    ■ País <br />
-    ■ Estado <br />
-    ■ Município <br />
-    ■ CEP <br />
-    ■ Rua <br />
-    ■ Número <br />
-    ■ Complemento <br />
+      ■ País <br />
+      ■ Estado <br />
+      ■ Município <br />
+      ■ CEP <br />
+      ■ Rua <br />
+      ■ Número <br />
+      ■ Complemento <br />
   ○ CPF <br />
   ○ PIS <br />
   ○ Senha <br />
@@ -29,4 +29,4 @@ ele deslogue automáticamente do perfil.
 
 Para desenvolver esse projeto foram usados HTML5, CSS3, Bootstrap, Javascript, JQuery <br />
 sem nenhuma linguagem backend.<br />
-Optei por armazenar os dados no LocalStorage mesmo, e resgata-los através do JS.<br />
+Optei por armazenar os dados no LocalStorage, e resgata-los através do JS.<br />
