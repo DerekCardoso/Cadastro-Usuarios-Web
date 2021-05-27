@@ -30,3 +30,7 @@ ele deslogue automáticamente do perfil.
 Para desenvolver esse projeto foram usados HTML5, CSS3, Bootstrap, Javascript, JQuery <br />
 sem nenhuma linguagem backend.<br />
 Optei por armazenar os dados no LocalStorage, e resgata-los através do JS.<br />
+<br />
+Foram criadas páginas de Login, Cadastro e Home, Seguindo o que foi proposto no projeto<br />
+na página de Login temos uma mensagem dizendo "Olá, Visitante" e na página de login<br /> 
+o JS busca o nome do usuário que está logado na função "userLogado" e joga no HTML através do innerHTML.
